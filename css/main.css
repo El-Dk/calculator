@@ -1,0 +1,50 @@
+html{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-template-rows: 5rem 1fr 5rem;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+header{
+    background-color: red;
+}
+main{
+    align-self: center;
+    justify-self: center;
+}
+footer{
+    background-color: green;
+}
+button{
+    height: 4rem;
+    width: 4rem;
+}
+#resultDiv{
+    height: 4rem;
+}
+#buttons{
+    display: grid;
+    grid-template-areas: "numbers operators";
+    justify-content: center;
+}
+#numDiv{
+    display: grid;
+    grid-template-columns: 4rem 4rem 4rem;
+    grid-area: numbers;
+    width: 12rem;
+}
+#num0{
+    width: 8rem;
+    grid-column: 1 / 3 ;
+}
+#operators{
+    display: grid;
+    width: 4rem;
+    grid-area: operators;
+    grid-template-columns: 4rem;   
+}
