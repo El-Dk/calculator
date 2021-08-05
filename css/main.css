@@ -27,10 +27,22 @@ button{
 #resultDiv{
     height: 4rem;
 }
+#numInputDiv{
+    height: 4rem;
+}
 #buttons{
     display: grid;
-    grid-template-areas: "numbers operators";
+    grid-template-areas: "clear operators" 
+                         "numbers operators";
     justify-content: center;
+}
+#clearDiv{
+    display: grid;
+    grid-template-columns: 8rem 4rem;
+    grid-area: clear;
+}
+#clear{
+    width: 8rem;
 }
 #numDiv{
     display: grid;
