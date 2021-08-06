@@ -5,30 +5,80 @@ html{
 }
 body{
     display: grid;
-    grid-template-rows: 5rem 1fr 5rem;
+    grid-template-rows: 4rem 1fr 4rem;
     margin: 0;
     padding: 0;
     height: 100vh;
+    background-color: #F18805;
 }
-header{
-    background-color: red;
+header h1{
+    align-self: center;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bolder;
 }
 main{
     align-self: center;
     justify-self: center;
+    background-color: #000000;
+    border-radius: 5%;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
 }
 footer{
-    background-color: green;
+justify-self: center;
+}
+footer img{
+    height: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+#resultDiv{
+    background-color: #ffffff;
+    color: #000000;
+    text-align: right;
+    font-size: 1rem;
+    height: 1.5rem;
+    padding-right: 0.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+#numInputDiv{
+    background-color: #ffffff;
+    color: #000000;
+    text-align: right;
+    font-size: 1.5rem;
+    height: 2.25rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-right: 0.7rem;
 }
 button{
     height: 4rem;
     width: 4rem;
+    border-radius: 0%;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
 }
-#resultDiv{
-    height: 4rem;
+button:active{
+    background-color: #ffffff;
+    color: #000000;
 }
-#numInputDiv{
-    height: 4rem;
+#clearDiv button, #operators button{
+    font-size: 1.2rem;
+    color: #e27b05;
+}
+#clearDiv button:active, #operators button:active{
+    background-color: #e27b05;
+    color: #000000;
+}
+.keyForButton{
+    background-color: #ffffff !important;
+    color: #000000 !important;
 }
 #buttons{
     display: grid;
